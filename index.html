@@ -39,17 +39,6 @@
 
 <body>
 
-    <div class="loading">
-        <p>Hello!</p>
-
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-        </div>
-    </div>
-
     <header>
 
         <section class="header" id="header_top">
@@ -64,7 +53,7 @@
                         <li><a href=#FLOW>FLOW</a></li>
                         <li><a href=#GALLERY>GALLERY</a></li>
                         <li><a href=#CONTACT>CONTACT</a></li>
-                        <li><a href=#PROFILE>PROFILE2</a></li>
+                        <li><a href=#PROFILE>PROFILE</a></li>
                         <li><a href="https://www.instagram.com/tomoe___photographer/">
                                 <img src="image/To_insta.png" alt="インスタグラムへのリンク>"></a></li>
 
@@ -89,7 +78,7 @@
                             <li><a href=#GALLERY>GALLERY</a></li>
                             <li><a href=#CONTACT>CONTACT</a></li>
                             <li><a href=#PROFILE>PROFILE</a></li>
-                            <li><a href="https://www.instagram.com/tomoe___photographer/">Instagram</li>
+                            <li><a href="https://www.instagram.com/tomoe___photographer/">Instagram</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -473,22 +462,22 @@
     <!-- js,jQuery -->
     <script>
 
-        // ローディングアニメーション
-        $(function () {
-            $(window).on("load", function () {
-                setTimeout(() => {
-                    //1000msかけてフェードアウトする、この場合はローディング背景、文字ごとフェードアウトさせる
-                    $('.loading').fadeOut(1000);
-                    //2000ms後に上記のフェードアウトを実行する
-                }, 2500);
+        // // ローディングアニメーション
+        // $(function () {
+        //     $(window).on("load", function () {
+        //         setTimeout(() => {
+        //             //1000msかけてフェードアウトする、この場合はローディング背景、文字ごとフェードアウトさせる
+        //             $('.loading').fadeOut(1000);
+        //             //2000ms後に上記のフェードアウトを実行する
+        //         }, 2000);
 
-                setTimeout(() => {
-                    //1000msかけて今回は文字をフェードインする
-                    $('.loading__fade').fadeIn(1000);
-                    //300ms後に上記のフェードインをを実行する
-                }, 300);
-            });
-        });
+        //         // setTimeout(() => {
+        //         //     //1000msかけて今回は文字をフェードインする
+        //         //     $('.sk-folding-cube').fadeIn(1000);
+        //         //     //300ms後に上記のフェードインをを実行する
+        //         // }, 300);
+        //     });
+        // });
 
         // 1024px以下でスクロールを全てupに変更
         $(window).resize(function () {
