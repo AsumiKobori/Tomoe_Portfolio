@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomoe</title>
+    <!-- 筑紫A丸ゴシック -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'hio2otc',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- スライダー -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="loading">
+        <p>Hello!</p>
+
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+    <header>
+
+        <section class="header" id="header_top">
+
+            <div class="Header_wrap Header_wrap_pc">
+
+                <h1 class="pc_h1"><img src="image/Tomoe_logo.png" alt="Tomoe_logo"></h1>
+
+                <nav class="pc_nav">
+                    <ul>
+                        <li><a href=#MENU>MENU</a></li>
+                        <li><a href=#FLOW>FLOW</a></li>
+                        <li><a href=#GALLERY>GALLERY</a></li>
+                        <li><a href=#CONTACT>CONTACT</a></li>
+                        <li><a href=#PROFILE>PROFILE</a></li>
+                        <li><a href="https://www.instagram.com/tomoe___photographer/">
+                                <img src="image/To_insta.png" alt="インスタグラムへのリンク>"></a></li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+
+            <!-- スマホ -->
+
+            <div class="Header_wrap Header_wrap_sp">
+
+                <h1 class="sp_h1"><img src="image/Tomoe_logo.png" alt="Tomoe_logo"></h1>
+
+                <div class="openbtn1"><span></span><span></span><span></span></div>
+                <nav id="g-nav">
+                    <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                        <ul>
+                            <li><a href=#MENU>MENU</a></li>
+                            <li><a href=#FLOW>FLOW</a></li>
+                            <li><a href=#GALLERY>GALLERY</a></li>
+                            <li><a href=#CONTACT>CONTACT</a></li>
+                            <li><a href=#PROFILE>PROFILE</a></li>
+                            <li><a href="https://www.instagram.com/tomoe___photographer/">Instagram</li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="circle-bg"></div>
+
+
+            </div>
+
+            <div class="header_img">
+                <picture>
+                    <source srcset="image/header_main_sp.jpg" media="(max-width: 1024px)">
+                    <img src="image/header_main.png" alt="ヘッダー画像">
+                </picture>
+            </div>
+        </section>
+
+    </header>
+
+    <section class="CONCEPT">
+        <div>
+            <p class="scroll_up timing01">特別な日も、いつもの何気ない日常も…</p>
+            <p class="scroll_up timing02">その瞬間の音や匂い、感情を思い出すような</p>
+            <p class="scroll_up timing03">写真を残すお手伝いをさせてください</p>
+
+        </div>
+
+    </section>
+
+    <!-- メニュー -->
+    <div id="MENU"></div>
+    <section class="MENU">
+        <div class="title_menu title fadeIn">
+            <h2>MENU</h2>
+            <p></p>
+            <h3>撮影メニュー</h3>
+        </div>
+        <ul>
+            <li class="menu menu1">
+                <div class="box_line box_line_r scroll_left timing02 "></div>
+                <div class="box_box box_box_r scroll_up timing03"></div>
+                <h4 class="h4_sp scroll_up">Baby</h4>
+                <img class="menu_img menu_img_r scroll_right timing04" src="image/menu_baby.jpg" alt="メニュー画像_赤ちゃん">
+                <div class="menu_p menu_p_r scroll_left timing05">
+                    <h4 class="h4_pc">Baby</h4>
+                    <p>一生に一度の乳児期。普段ご家族と過ごしている日常に近い、ありのままの自然な姿を写真に残します。赤ちゃんに負担がかからないよう、赤ちゃんのペースに合わせてゆっくり撮影できますので、ご安心ください。エコー写真やお気に入りのおもちゃ等、ご一緒に撮影したいものがありましたら、ぜひご用意ください。
+                    </p>
+                </div>
+                <p class="menu_p_sp scroll_up">
+                    一生に一度の乳児期。普段ご家族と過ごしている日常に近い、ありのままの自然な姿を写真に残します。赤ちゃんに負担がかからないよう、赤ちゃんのペースに合わせてゆっくり撮影できますので、ご安心ください。エコー写真やお気に入りのおもちゃ等、ご一緒に撮影したいものがありましたら、ぜひご用意ください。
+                </p>
+            </li>
+
+            <div class="menu_line_sp"></div>
+
+            <li class="menu menu2">
+                <div class="box_line box_line_l scroll_right timing02"></div>
+                <div class="box_box box_box_l scroll_up timing03"></div>
+                <h4 class="h4_sp scroll_up">Family</h4>
+                <img class="menu_img menu_img_l scroll_left timing04" src="image/menu_family.jpg" alt="メニュー画像_家族撮影">
+                <div class="menu_p menu_p_l scroll_right timing05">
+                    <h4 class="h4_pc">Family</h4>
+                    <p>
+                        ご自宅や思い出の場所にて、出張撮影を行っております。ペットとご一緒の撮影も可能です。他愛もない日常からご家族の記念日まで、大切なご家族との時間を写真に残します。
+                    </p>
+                </div>
+                <p class="menu_p_sp scroll_up">
+                    ご自宅や思い出の場所にて、出張撮影を行っております。ペットとご一緒の撮影も可能です。他愛もない日常からご家族の記念日まで、大切なご家族との時間を写真に残します。
+                </p>
+            </li>
+
+            <div class="menu_line_sp"></div>
+
+            <li class="menu menu3">
+                <div class="box_line box_line_r scroll_left timing02"></div>
+                <div class="box_box box_box_r scroll_up timing03"></div>
+                <h4 class="h4_sp scroll_up">Anniversary</h4>
+                <img class="menu_img menu_img_r scroll_right timing04" src="image/menu_anniversary.jpg"
+                    alt="メニュー画像_記念日撮影">
+                <div class="menu_p menu_p_r scroll_left timing05">
+                    <h4 class="h4_pc">Anniversary</h4>
+                    <p>
+                        お宮参り、お誕生日、七五三、入学式、卒業式、成人式、結婚記念日…<br>
+                        普段よりおめかしして緊張してしまうかもしれませんが、そんな中でもキリっとした表情やいつもの笑顔、その時だけの表情を思い出に残すお手伝いをさせてください。
+                    </p>
+                </div>
+                <p class="menu_p_sp scroll_up">
+                    お宮参り、お誕生日、七五三、入学式、卒業式、成人式、結婚記念日…<br>
+                    普段よりおめかしして緊張してしまうかもしれませんが、そんな中でもキリっとした表情やいつもの笑顔、その時だけの表情を思い出に残すお手伝いをさせてください。
+                </p>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <!-- フロー -->
+    <div id="FLOW"></div>
+    <section class="FLOW">
+        <div class="title_flow title fadeIn">
+            <h2>FLOW</h2>
+            <p></p>
+            <h3>写真のお渡しまで</h3>
+        </div>
+
+        <div class="flow_wrap">
+
+            <div class="flow flow_application scroll_left timing01">
+                <img src="image/application.jpg" alt="アイコン＿お申し込み・問い合わせ">
+                <div class="flow_p">
+                    <h5>お申し込み</h5>
+                    <p>お問い合わせフォームよりご連絡下さい。メールで返信いたします。メールの他にLINEでのご相談も可能です。<br>
+                        出張撮影の料金プランは設定しておりません。撮影内容/撮影場所/撮影日時/撮影人数/ご予算等のご希望に合わせたお客様だけの撮影プランを提案し、詳細な打ち合わせの上で撮影に臨みます。まずはお気軽にお問合せください。
+                    </p>
+                </div>
+            </div>
+
+            <div class="triangle scroll_left timing02"></div>
+
+            <div class="flow flow_take scroll_left timing03">
+                <img src="image/take.jpg" alt="アイコン_撮影">
+                <div class="flow_p">
+                    <h5>撮影</h5>
+                    <p>ご指定の撮影場所に伺い、撮影を行います。お客様ご持参のフォトアイテムもご自由にお使いいただけます。通常待ち合わせから撮影終了まで、簡単な撮影内容確認も含めて概ね60〜90分程度です。<br>
+                        料金の支払いについては、撮影後に現金もしくはPayPayにて頂戴しております。打ち合わせの際にご指定ください。</p>
+                </div>
+            </div>
+
+            <div class="triangle scroll_left timing04"></div>
+
+            <div class="flow flow_passing scroll_left timing05">
+                <img src="image/passing.jpg" alt="アイコン＿お渡し">
+                <div class="flow_p">
+                    <h5>お渡し</h5>
+                    <p>撮影後データセレクト・編集を行い、ダウンロード形式にてお渡しします。通常2週間ほどでお渡ししておりますが、繁忙期には4週間ほどかかる場合がございます。お渡し時期に関しては打ち合わせ時もしくは撮影後にお伝えいたします。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href=#CONTACT>
+            <div class="buttun_to_contact scroll_up">お申し込み・お問い合わせはこちら</div>
+        </a>
+
+        <div class="description scroll_up">
+            <div class="description_title">
+                <div class="triangle2"></div>
+                <p class="description_title_p">撮影について</p>
+                <div class="triangle2"></div>
+            </div>
+
+            <!-- クリックしたら開く箇所 -->
+            <ul class="description_box">
+                <li><span>撮影料金について</span><br>
+                    撮影内容の詳細なご希望を伺い、お見積りいたします。お問い合わせフォームよりご相談下さい。</li>
+                <li><span>撮影許可について</span><br>
+                    屋外や施設（例：神社、仏閣、テーマパーク等）での撮影は撮影許可申請が必要な場合がございます。撮影許可の要否確認および撮影許可申請はお客様ご自身にてお願いいたします。</li>
+                <li><span>撮影にかかる入場料について</span><br>
+                    お客様ご負担となります。現地にてお客様にてお支払いもしくは、撮影料金に併せてご請求とさせていただきます。</li>
+                <li><span>交通費について</span><br>
+                    お客様ご負担となります。普通自動車にて移動いたします。移動距離により変動するため、お見積り時にお伝えいたします。なお、撮影にかかる駐車場代・高速代はお客様ご負担となります。</li>
+                <li><span>キャンセル・日程変更について</span><br>
+                    待ち合わせ予定時刻の３時間前までにご連絡いただければ、追加料金なしでキャンセル・日程変更が可能です。当初の撮影予定日より３ヶ月以内のお日にちで調整が可能ですので、撮影地の天候不良や体調不良等の場合でもお気軽にご相談ください。<br>
+                    なお、キャンセル・日程変更のご連絡が待ち合わせ予定時刻の3時間前を過ぎた場合は、撮影料金に¥3,000追加請求いたします。あらかじめご了承ください。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ギャラリー -->
+
+    <section class="GALLERY" id="GALLERY">
+
+        <div class="title_gallery title fadeIn">
+            <h2>GALLERY</h2>
+            <p></p>
+            <h3>作品一覧</h3>
+        </div>
+
+        <ul class="gallery">
+            <li class="scroll_up timing01"><a href="image/gallery1.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery1s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing02"><a href="image/gallery2.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery2s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing03"><a href="image/gallery3.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery3s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing01"><a href="image/gallery4.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery4s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing02"><a href="image/gallery5.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery5s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing03"><a href="image/gallery6.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery6s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing01"><a href="image/gallery7.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery7s.jpg" alt="ギャラリー写真"></a>
+
+            <li class="scroll_up timing02"><a href="image/gallery8.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery8s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing03"><a href="image/gallery9.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery9s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing01"><a href="image/gallery10.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery10s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing02"><a href="image/gallery11.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery11s.jpg" alt="ギャラリー写真"></a>
+            </li>
+
+            <li class="scroll_up timing03"><a href="image/gallery12.jpg" data-lightbox="gallery1"
+                    data-title="キャプション"><img src="image/gallery12s.jpg" alt="ギャラリー写真"></a>
+            </li>
+        </ul>
+
+        <div class="slider_sp">
+            <ul class="slider">
+                <li><a href="image/gallery1.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery1s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery2.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery2s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery3.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery3s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery4.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery4s.jpg" alt="ギャラリー写真"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider_sp">
+            <ul class="slider2" dir="rtl">
+                <li><a href="image/gallery5.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery5s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery6.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery6s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery7.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery7s.jpg" alt="ギャラリー写真"></a></li>
+
+                <li><a href="image/gallery8.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery8s.jpg" alt="ギャラリー写真"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider_sp">
+            <ul class="slider">
+                <li><a href="image/gallery9.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery9s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery10.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery10s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery11.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery11s.jpg" alt="ギャラリー写真"></a>
+                </li>
+
+                <li><a href="image/gallery12.jpg" data-lightbox="gallery2" data-title="キャプション"><img
+                            src="image/gallery12s.jpg" alt="ギャラリー写真"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="CONTACT"></div>
+    <section class="CONTACT">
+
+        <div class="title_contact title fadeIn">
+            <h2>CONTACT</h2>
+            <p class="title_contact_line"></p>
+            <h3>ご依頼・お問い合わせ</h3>
+        </div>
+
+        <p class="contact_p scroll_up"> 当サイトをご覧いただきありがとうございます。<br>
+            撮影のご依頼やご相談等ございましたら、<br>下記お問い合わせフォームよりお気軽にお問い合わせください。<br>
+            通常、返信まで1~3日いただいております。3日を過ぎても返信がない場合は<br>
+            大変恐縮ですが、再度お問い合わせください。</p>
+
+        <p class="contact_p_sp scroll_up"> 当サイトをご覧頂きありがとうございます。<br>
+            撮影のご依頼やご相談等ございましたら、<br>
+            下記お問い合わせフォームより<br>
+            お気軽にお問い合わせください。<br>
+            通常、返信まで1~3日いただいております。<br>
+            3日を過ぎても返信がない場合は<br>
+            大変恐縮ですが、再度ご連絡ください。</p>
+
+        <div class="contact_form">
+            <form action="">
+
+                <ul class="contact_ul scroll_up">
+
+                    <li class="contact_li">
+                        <p class="contact_li_p">お名前</p>
+                        <input type="text" name="名前" class="form-text" />
+                    </li>
+
+                    <li class="contact_li">
+                        <p class="contact_li_p">メールアドレス</p>
+                        <input type="text" name="名前" class="form-text" />
+                    </li>
+
+                    <li class="contact_li">
+                        <p class="contact_li_p">お問い合わせ内容</p>
+                        <textarea name="問い合わせ" class="form-textarea"></textarea>
+                    </li>
+
+                </ul>
+
+            </form>
+
+            <input class="contact-submit scroll_up" type="submit" value="内容を送信する" />
+
+        </div>
+
+    </section>
+
+    <section class="PROFILE" id="PROFILE">
+
+        <div class="title_profile title fadeIn">
+            <h2>PROFILE</h2>
+            <p class="title_profile_line"></p>
+            <h3>自己紹介</h3>
+        </div>
+
+        <div class="profile">
+
+            <div class="profile_box scroll_up timing01"></div>
+
+            <div class="profile_box_line scroll_right timing02"></div>
+
+            <picture class="">
+                <source srcset="image/profile_sp.jpg" media="(max-width: 1024px)">
+                <img class="scroll_left timing03" src="image/profile.jpg" alt="ヘッダー画像">
+            </picture>
+
+            <div class="profile_p scroll_right timing04">
+                <p class="profile_name">ともえ</p>
+                <p class="profile_description">3人の子供を持つママフォトグラファー、ともえです。<br>
+                    埼玉県出身、水戸市在住です。以前は保育園栄養士として働いていました。現在は、茨城県県央地域を中心に学校・保育園のイベント撮影や個人向け出張撮影をメインに活動しています。<br>
+                    もともと子どもが好きなこともあり、趣味で写真撮影をしていました。そんな中で末っ子を1061gで出産し、生活が一遍しました。入院中の子どもに母乳を届けるため毎日通院していました。不安が続く日々のなかで、離れている時に見る子どもの写真は心の支えでした。日常をおさめた写真は、子どもが大きくなった今でも、その瞬間の音や匂い、感情などが感じられる大切な宝物です。自分自身の経験から、<br><span
+                        class="profile_description_span_pc">5年後、10年後に「あの頃はね…」と思い出せるような<br>宝物を残すお手伝いをしたい</span><span
+                        class="profile_description_span_sp">5年後、10年後に「あの頃はね…」と思い出せるような宝物を残すお手伝いをしたい</span>と思い、この仕事を始めました。
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="FOOTER">
+
+        <div class="footer_wrap">
+            <p>©Tomoe</p>
+        </div>
+
+    </section>
+
+    <!-- js,jQuery -->
+    <script>
+
+        // ローディングアニメーション
+        $(function () {
+            $(window).on("load", function () {
+                setTimeout(() => {
+                    //1000msかけてフェードアウトする、この場合はローディング背景、文字ごとフェードアウトさせる
+                    $('.loading').fadeOut(1000);
+                    //2000ms後に上記のフェードアウトを実行する
+                }, 2500);
+
+                setTimeout(() => {
+                    //1000msかけて今回は文字をフェードインする
+                    $('.loading__fade').fadeIn(1000);
+                    //300ms後に上記のフェードインをを実行する
+                }, 300);
+            });
+        });
+
+        // 1024px以下でスクロールを全てupに変更
+        $(window).resize(function () {
+            //windowの幅をxに代入
+            var x = $(window).width();
+            //windowの分岐幅をyに代入
+            var y = 1024;
+            if (x <= y) {
+                $('#rtu').addClass('scroll_right').removeClass('scroll_up');
+            } else {
+                $('#rtu').addClass('scroll_up').removeClass('scroll_right');
+            }
+        });
+
+
+        // 撮影の説明文クリックしたら開閉
+        $(function () {
+            $(".description_title").click(function () {
+                $(".description_box").slideToggle("close");
+            });
+        });
+
+        $(function () {
+            $('.zdo_drawer_button').click(function () {
+                $(this).toggleClass('active');
+            })
+        })
+
+        //スクロールしたらふわっと出る
+        $(window).scroll(function () {
+            var scrollAnimationElm = document.querySelectorAll('.scroll_up,.scroll_left,.scroll_right,.fadeIn');
+            var scrollAnimationFunc = function () {
+                for (var i = 0; i < scrollAnimationElm.length; i++) {
+                    var triggerMargin = 50;
+                    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+                        scrollAnimationElm[i].classList.add('on');
+                    }
+                }
+            }
+            window.addEventListener('load', scrollAnimationFunc);
+            window.addEventListener('scroll', scrollAnimationFunc);
+        });
+
+
+        // sp_nav
+        $(".openbtn1").click(function () {//ボタンがクリックされたら
+            $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+            $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
+        });
+
+        $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+            $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+            $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
+            $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+        });
+
+        // スライダー
+        $('.slider').slick({
+            autoplay: true, // 自動でスクロール
+            autoplaySpeed: 2000, // 自動再生のスライド切り替えまでの時間を設定
+            cssEase: "linear", // スライドの流れ方を等速に設定
+            slidesToShow: 1, // 表示するスライドの数
+            arrows: false, // 矢印非表示
+            pauseOnFocus: true, // スライダーをフォーカスした時にスライドを停止させるか
+
+        });
+
+        $('.slider2').slick({
+            autoplay: true, // 自動でスクロール
+            autoplaySpeed: 2000, // 自動再生のスライド切り替えまでの時間を設定
+            cssEase: "linear", // スライドの流れ方を等速に設定
+            slidesToShow: 1, // 表示するスライドの数
+            arrows: false, // 矢印非表示
+            pauseOnFocus: true, // スライダーをフォーカスした時にスライドを停止させるか
+            rtl: true, // スライダーを左から右に流す（逆向き）
+
+        });
+
+        $(window).on('load', function () {
+            $('.slick-cloned a').removeAttr('data-lightbox');
+        });
+
+        lightbox.option({
+            'albumLabel': "GALLERY %1 / %2",
+            'wrapAround': true,
+        })
+
+    </script>
+
+</body>
+
+</html>
