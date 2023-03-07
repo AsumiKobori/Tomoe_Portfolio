@@ -52,7 +52,6 @@ img {
   width: 100%;
   vertical-align: bottom;
   border: none;
-  cursor: zoom-in;
 }
 
 body {
@@ -871,6 +870,9 @@ body {
   display: grid;
   gap: 15px;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.GALLERY .gallery li img {
+  cursor: zoom-in;
 }
 @media screen and (max-width: 1024px) {
   .GALLERY .gallery {

@@ -64,7 +64,6 @@ img {
     width: 100%;
     vertical-align: bottom;
     border: none;
-    cursor: zoom-in;
 }
 
 // リセット終わり
@@ -939,6 +938,10 @@ body {
         display: grid;
         gap: 15px;
         grid-template-columns: 1fr 1fr 1fr;
+
+        li img {
+            cursor: zoom-in;
+        }
 
         @media screen and (max-width: 1024px) {
             gap: 10px;
