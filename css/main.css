@@ -106,7 +106,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .scroll_left.on,
-.scroll_right.on {
+  .scroll_right.on {
     transform: translateY(0);
     opacity: 1;
   }
@@ -114,15 +114,6 @@ body {
 
 .fadeIn {
   opacity: 0;
-}
-
-@-webkit-keyframes fadeInAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeInAnime {
@@ -134,12 +125,9 @@ body {
   }
 }
 .fadeIn.on {
-  -webkit-animation-name: fadeInAnime;
-          animation-name: fadeInAnime;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: fadeInAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -219,12 +207,12 @@ body {
     /*×に変化*/
   }
   .header .pc_nav,
-.header .pc_h1,
-.header .Header_wrap_pc {
+  .header .pc_h1,
+  .header .Header_wrap_pc {
     display: none;
   }
   .header .sp_nav,
-.header .Header_wrap_sp {
+  .header .Header_wrap_sp {
     display: block;
   }
   .header .Header_wrap_sp {
@@ -294,14 +282,6 @@ body {
   }
   .header #g-nav.panelactive ul {
     opacity: 1;
-  }
-  @-webkit-keyframes gnaviAnime {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   @keyframes gnaviAnime {
     0% {
@@ -514,10 +494,18 @@ body {
     display: block;
     font-size: 15px;
     padding: 20px 6.46%;
+    text-align: center;
+  }
+  .MENU ul .menu .menu_p_sp span {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 10px;
   }
 }
 .MENU ul .menu .menu_p {
-  max-width: 600px;
+  width: 400px;
   padding: 20px 40px;
   background-color: #efe6e6;
 }
@@ -529,13 +517,17 @@ body {
 }
 .MENU ul .menu .menu_p h4 {
   font-size: 25px;
-  font-weight: bold;
-  text-align: center;
+  text-align: left;
   margin: 0;
-  padding-bottom: 20px;
 }
-.MENU ul .menu .menu_p p {
-  line-height: 1.75;
+.MENU ul .menu .menu_p .menu_price {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: right;
+}
+.MENU ul .menu .menu_p .menu_time {
+  text-align: right;
+  padding-top: 5px;
 }
 .MENU .menu1 {
   position: relative;
@@ -580,8 +572,8 @@ body {
 }
 .MENU .menu1 .menu_p_r {
   position: absolute;
-  top: 400px;
-  right: 610px;
+  top: 500px;
+  right: 47.4%;
   z-index: 4;
 }
 .MENU .menu2 {
@@ -622,8 +614,8 @@ body {
 }
 .MENU .menu2 .menu_p_l {
   position: absolute;
-  top: 440px;
-  left: 610px;
+  top: 500px;
+  left: 47.4%;
   z-index: 4;
 }
 @media screen and (max-width: 1024px) {
@@ -675,8 +667,8 @@ body {
 }
 .MENU .menu3 .menu_p_r {
   position: absolute;
-  top: 400px;
-  right: 610px;
+  top: 500px;
+  right: 47.4%;
   z-index: 4;
 }
 @media screen and (max-width: 1024px) {
@@ -782,7 +774,6 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .FLOW .flow_wrap .flow .flow_p p {
-    max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
     font-size: 15px;
@@ -985,8 +976,8 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .CONTACT .contact_form .contact_ul li input,
-.CONTACT .contact_form .contact_ul li .form-textarea,
-.CONTACT .contact_form .contact_ul li .form-text {
+  .CONTACT .contact_form .contact_ul li .form-textarea,
+  .CONTACT .contact_form .contact_ul li .form-text {
     font-size: 15px;
   }
 }
