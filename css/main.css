@@ -136,23 +136,23 @@ body {
 }
 
 .timing02 {
-  transition-delay: 0.2s;
+  transition-delay: 0.18s;
 }
 
 .timing03 {
-  transition-delay: 0.3s;
+  transition-delay: 0.26s;
 }
 
 .timing04 {
-  transition-delay: 0.4s;
+  transition-delay: 0.34s;
+}
+
+.timing05 {
+  transition-delay: 0.42s;
 }
 
 .timing05 {
   transition-delay: 0.5s;
-}
-
-.timing05 {
-  transition-delay: 0.6s;
 }
 
 .header {
