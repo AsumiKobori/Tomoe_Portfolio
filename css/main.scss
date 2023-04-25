@@ -748,6 +748,35 @@ body {
             }
         }
     }
+
+    .menu_list_title {
+        color: $text_color;
+        text-align: center;
+        font-size: $font-size25;
+        margin: 85px 0 40px;
+    }
+
+    .menu_list {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media screen and (max-width: 1024px) {
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0 10px;
+        }
+
+        li {
+            background-color: $line_color;
+            text-align: center;
+            width: 220px;
+            padding: 35px 0px;
+            margin: 0 auto;
+        }
+    }
 }
 
 // FLOW

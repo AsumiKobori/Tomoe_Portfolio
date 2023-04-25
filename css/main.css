@@ -677,6 +677,33 @@ body {
     max-width: 1024px;
   }
 }
+.MENU .menu_list_title {
+  color: #3a3638;
+  text-align: center;
+  font-size: 25px;
+  margin: 85px 0 40px;
+}
+.MENU .menu_list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1024px) {
+  .MENU .menu_list {
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 10px;
+  }
+}
+.MENU .menu_list li {
+  background-color: #c6b6ba;
+  text-align: center;
+  width: 220px;
+  padding: 35px 0px;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 1024px) {
   #FLOW {
