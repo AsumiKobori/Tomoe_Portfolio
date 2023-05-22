@@ -692,17 +692,29 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .MENU .menu_list {
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 10px;
+    margin: 0px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .MENU .menu_list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 0 30px;
   }
 }
 .MENU .menu_list li {
   background-color: #c6b6ba;
   text-align: center;
-  width: 220px;
+  width: 100%;
   padding: 35px 0px;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .MENU .menu_list li {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
