@@ -877,6 +877,9 @@ body {
   .FLOW .description .description_box li span {
     display: block;
     text-align: center;
+    min-width: 250px;
+    max-width: 28%;
+    margin: 0 auto;
   }
 }
 .FLOW .description .description_box li + li {
